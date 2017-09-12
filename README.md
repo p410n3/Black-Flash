@@ -2,7 +2,7 @@
 
 ## Inverts Screen to make the Flashbang effect in CS:GO black. That helps people who are very photosensitive.
 
-![https://palone.top/sx/i/d7c06e70971bf2ac05bb580e116ef348.png][BlackFlash]
+![BlackFlash](https://palone.top/sx/i/d7c06e70971bf2ac05bb580e116ef348.png)
 
 Installation for people who cant build from source:
 
