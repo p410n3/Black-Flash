@@ -2,8 +2,6 @@
 
 ## Inverts Screen to make the Flashbang effect in CS:GO black. That helps people who are very photosensitive.
 
-----
-
 Installation for people who cant build from source:
 
 Donwload the latest Installer from https://palone.top/bf.exe and execute it. 
