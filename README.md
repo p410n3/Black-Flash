@@ -15,3 +15,5 @@ Then start the NegativeScreen.exe and after that the BlackFlash.exe.
 (When you start NegativeScreen it will make the Screen Negative once. Click on your system tray and right click on the NegativScreen -> Toggle Inversion)
 
 This program only works on windowed or Fullscreen windowed mode.
+
+NegativeScreen requires a 64-bit OS.
