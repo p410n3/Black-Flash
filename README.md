@@ -1,6 +1,8 @@
 # Black-Flash
 
-Inverts Screen to make the Flashbang effect in CS:GO black. That helps people who are very photosensitive.
+##Inverts Screen to make the Flashbang effect in CS:GO black. That helps people who are very photosensitive.
+
+----
 
 Installation for people who cant build from source:
 
