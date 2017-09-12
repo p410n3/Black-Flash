@@ -6,7 +6,7 @@
 
 Installation for people who cant build from source:
 
-Donwload the latest Installer from https://palone.top/bf.exe and execute it. 
+Donwload the latest Installer from https://palone.top/blackflash/bf.exe and execute it. 
 
 You now will have the shortcuts for the BlackFlash.exe and the NegativeScreen.exe on your Desktop. You also will have a shortcut for the gamestate_integration_pl.cfg on there as well.
 
