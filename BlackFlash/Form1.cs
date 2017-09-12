@@ -49,6 +49,7 @@ namespace BlackFlash
             {
                 flashed = gs.Player.State.Flashed;
                 lblFlashState.Text = Convert.ToString(flashed);
+
                 if (flashed >= toggleSetting)
                 {
                     web.UploadData("http://localhost:8990", "POST", enable);

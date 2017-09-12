@@ -48,7 +48,7 @@
             // lblFlashState
             // 
             this.lblFlashState.AutoSize = true;
-            this.lblFlashState.Location = new System.Drawing.Point(70, 13);
+            this.lblFlashState.Location = new System.Drawing.Point(65, 178);
             this.lblFlashState.Name = "lblFlashState";
             this.lblFlashState.Size = new System.Drawing.Size(0, 13);
             this.lblFlashState.TabIndex = 1;
@@ -65,7 +65,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(9, 9);
+            this.label1.Location = new System.Drawing.Point(12, 9);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(278, 117);
             this.label1.TabIndex = 3;
