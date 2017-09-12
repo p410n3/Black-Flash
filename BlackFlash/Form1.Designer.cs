@@ -44,7 +44,6 @@
             this.lblFlashed.Size = new System.Drawing.Size(50, 13);
             this.lblFlashed.TabIndex = 0;
             this.lblFlashed.Text = "Flashed: ";
-            this.lblFlashed.Click += new System.EventHandler(this.lblFlashed_Click);
             // 
             // lblFlashState
             // 
@@ -80,7 +79,6 @@
             this.label2.Size = new System.Drawing.Size(80, 13);
             this.label2.TabIndex = 4;
             this.label2.Text = "Set Value here:";
-            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // Form1
             // 

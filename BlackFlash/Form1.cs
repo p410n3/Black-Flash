@@ -80,15 +80,5 @@ namespace BlackFlash
 
             toggleSetting = Convert.ToInt32(txtToggleValue.Text);
         }
-
-        private void label2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void lblFlashed_Click(object sender, EventArgs e)
-        {
-
-        }
     }
 }
