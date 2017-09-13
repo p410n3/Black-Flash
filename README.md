@@ -19,3 +19,5 @@ Then start the NegativeScreen.exe and after that the BlackFlash.exe.
 This program only works on windowed or Fullscreen windowed mode.
 
 NegativeScreen requires a 64-bit OS.
+
+### This program uses https://github.com/mlaily/NegativeScreen to function properly. Credits go to https://github.com/mlaily/
