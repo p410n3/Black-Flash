@@ -15,13 +15,14 @@ namespace BlackFlash
     public partial class MainForm : Form
     {
         //Global Vars
-        private int _flashed;
+        private bool _isFlashed;
         private readonly WebClient _web = new WebClient();
 
         //POST requests
         private readonly byte[] _enable = Encoding.UTF8.GetBytes("ENABLE");
         private readonly byte[] _disable = Encoding.UTF8.GetBytes("DISABLE");
 
+        //model
         private readonly Model _model;
 
         public MainForm()
@@ -34,6 +35,9 @@ namespace BlackFlash
 
             // register data binding for current value label
             lblCurrentValue.DataBindings.Add("Text", _model, "ToggleSetting");
+
+            // register data binding for flashed value label
+            lblFlashState.DataBindings.Add("Text", _model, "Flashed");
         }
     
         private void MainForm_Load(object sender, EventArgs e)
@@ -45,20 +49,21 @@ namespace BlackFlash
                 MessageBox.Show("Failed to start GameStateListener", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 Environment.Exit(0);
             }
+        }
 
-            void OnNewGameState(GameState gs)
+        private void OnNewGameState(GameState gs)
+        {
+            _model.Flashed = gs.Player.State.Flashed;
+
+            if (!_isFlashed && _model.Flashed >= _model.ToggleSetting)
             {
-                _flashed = gs.Player.State.Flashed;
-                lblFlashState.Text = Convert.ToString(_flashed);
-
-                if (_flashed >= _model.ToggleSetting)
-                {
-                    _web.UploadData("http://localhost:8990", "POST", _enable);
-                }
-                else if(_flashed <= _model.ToggleSetting)
-                {
-                    _web.UploadData("http://localhost:8990", "POST", _disable);
-                }
+                _web.UploadData("http://localhost:8990", "POST", _enable);
+                _isFlashed = true;
+            }
+            else if (_isFlashed && _model.Flashed <= _model.ToggleSetting)
+            {
+                _web.UploadData("http://localhost:8990", "POST", _disable);
+                _isFlashed = false;
             }
         }
 
@@ -83,8 +88,18 @@ namespace BlackFlash
 
         private class Model : INotifyPropertyChanged
         {
-            private int _toggleSetting;
+            private int _flashed;
+            public int Flashed
+            {
+                get => _flashed;
+                set
+                {
+                    _flashed = value;
+                    OnPropertyChanged();
+                }
+            }
 
+            private int _toggleSetting;
             public int ToggleSetting
             {
                 get => _toggleSetting;

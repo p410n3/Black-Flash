@@ -51,7 +51,7 @@
             // lblFlashState
             // 
             this.lblFlashState.AutoSize = true;
-            this.lblFlashState.Location = new System.Drawing.Point(65, 178);
+            this.lblFlashState.Location = new System.Drawing.Point(62, 184);
             this.lblFlashState.Name = "lblFlashState";
             this.lblFlashState.Size = new System.Drawing.Size(0, 13);
             this.lblFlashState.TabIndex = 1;
