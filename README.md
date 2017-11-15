@@ -2,8 +2,11 @@
 
 ## Inverts Screen to make the Flashbang effect in CS:GO black. That helps people who are very photosensitive.
 
-[BlackFlash](https://www.youtube.com/watch?v=i2IFOx_gSKs)
+<iframe width="1280" height="720" src="https://www.youtube.com/embed/i2IFOx_gSKs" frameborder="0" gesture="media" allowfullscreen></iframe>
 Video for Demonstration.
+
+There is another Program that was made after mine. Its better in most ways so I recommend using this:
+<a href="https://github.com/dev7355608">csgo_dont_blind_me</a>
 
 Installation for people who cant build from source:
 
