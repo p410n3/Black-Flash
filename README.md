@@ -1,13 +1,15 @@
 # Black-Flash
 
-## Inverts Screen to make the Flashbang effect in CS:GO black. That helps people who are very photosensitive.
+Inverts Screen to make the Flashbang effect in CS:GO black. That helps people who are very photosensitive.
+
+# What is this?
 
 <a href="https://www.youtube.com/watch?v=i2IFOx_gSKs" target="_blank">Video for Demonstration and History of this little Project.</a>
 
 There is another Program that was made after mine. Its better in most ways so I recommend using this:
 <a href="https://github.com/dev7355608">csgo_dont_blind_me</a>
 
-Installation for people who cant build from source:
+ # Installation for people who can not build from source:
 
 Donwload the latest Installer from https://palone.top/blackflash/bf.exe and execute it. 
 
@@ -23,4 +25,6 @@ This program only works on windowed or Fullscreen windowed mode.
 
 NegativeScreen requires a 64-bit OS.
 
-### This program uses https://github.com/mlaily/NegativeScreen to function properly. Credits go to https://github.com/mlaily/
+# Licenses
+
+This program uses https://github.com/mlaily/NegativeScreen to function properly. Credits go to https://github.com/mlaily/
